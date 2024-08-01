@@ -45,7 +45,7 @@ export default function Admin() {
   };
 
   const handleUpload = async () => {
-    if (selectedFile) {
+    if (selectedFile && selectedExcel) {
       const formData = new FormData();
       formData.append("design", selectedFile);
       formData.append("file", selectedExcel);
