@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Glegoo:wght@400;700&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+/* styles.css */
+.container {
+  width: 80%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scrolling-text {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 22px;
+  white-space: nowrap;
+  animation: scroll-text 7s linear infinite;
+}
+
+.blue-drop-shadow {
+  box-shadow: 5px 5px 5px 0px rgba(17, 92, 209, 0.3);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(17, 92, 209, 0.3);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(17, 92, 209, 0.3);
+}
+.black-drop-shadow {
+  box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button-bg {
+  background: rgb(18, 94, 204);
+  background: -moz-linear-gradient(
+    280deg,
+    rgba(18, 94, 204, 1) 0%,
+    rgba(18, 188, 229, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    280deg,
+    rgba(18, 94, 204, 1) 0%,
+    rgba(18, 188, 229, 1) 100%
+  );
+  background: linear-gradient(
+    280deg,
+    rgba(18, 94, 204, 1) 0%,
+    rgba(18, 188, 229, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#125ecc",endColorstr="#12bce5",GradientType=1);
+}
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
